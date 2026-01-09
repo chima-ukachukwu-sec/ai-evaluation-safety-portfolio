@@ -20,6 +20,7 @@ I am an **AI Evaluation & Safety Specialist** with experience across adversarial
 ## Project Archetypes
 
 ### Project 1 — Adversarial AI Safety Testing & Data Exfiltration Risk
+📄 [`project-archetypes/adversarial-ai-safety-testing.md`](project-archetypes/adversarial-ai-safety-testing.md)
 
 **Focus:** Red‑team evaluation of privacy and data‑exfiltration risks using multi‑turn, context‑aware simulations.
 
@@ -35,6 +36,7 @@ I am an **AI Evaluation & Safety Specialist** with experience across adversarial
 ---
 
 ### Project 2 — AI Safety Governance, Risk Classification & Response Control
+📄 [`project-archetypes/ai-safety-governance-risk-control.md`](project-archetypes/ai-safety-governance-risk-control.md)
 
 **Focus:** Dataset labeling and governance to determine when models should respond, uplevel, or refuse cybersecurity‑related requests.
 
@@ -49,7 +51,8 @@ I am an **AI Evaluation & Safety Specialist** with experience across adversarial
 
 ---
 
-### Project 3 — Harm‑Precision Rubric Design & Review Calibration
+### Project 3 — Harm-Precision Rubric Design & Review Calibration
+📄 [`project-archetypes/harm-precision-rubric-governance.md`](project-archetypes/harm-precision-rubric-governance.md)
 
 **Focus:** Designing and refining safety rubrics to minimize false positives while preserving strong harm detection.
 
@@ -64,7 +67,8 @@ I am an **AI Evaluation & Safety Specialist** with experience across adversarial
 
 ---
 
-### Project 4 — Authentic Long‑Context Red Teaming & Persona‑Based Evaluation
+### Project 4 — Authentic Long-Context Red Teaming & Persona-Based Evaluation
+📄 [`project-archetypes/long-context-authentic-red-teaming.md`](project-archetypes/long-context-authentic-red-teaming.md)
 
 **Focus:** Stress‑testing models in long, realistic conversations to surface safety failures that appear only over extended context.
 
@@ -76,6 +80,23 @@ I am an **AI Evaluation & Safety Specialist** with experience across adversarial
 * Wellbeing‑aware red‑teaming practices
 
 **Key Skills:** Long‑context evaluation, human‑factors safety, realism enforcement, trend analysis.
+
+---
+
+
+## Supporting Artifacts
+
+### Workflows
+- 📄 [`workflow/evaluation-workflow.md`](workflow/evaluation-workflow.md)
+- 📄 [`workflow/time-tracking-best-practices.md`](workflow/time-tracking-best-practices.md)
+
+### Rubrics
+- 📄 [`rubrics/reasoning-rubric.json`](rubrics/reasoning-rubric.json)
+- 📄 [`rubrics/safety-rubric.json`](rubrics/safety-rubric.json)
+- 📄 [`rubrics/qa-checklist.md`](rubrics/qa-checklist.md)
+
+### Compliance
+- 📄 [`NDA_DISCLAIMER.md`](NDA_DISCLAIMER.md)
 
 ---
 
