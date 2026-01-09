@@ -1,0 +1,39 @@
+{
+  "name": "Reasoning Quality Rubric (NDA-Safe)",
+  "version": "1.0",
+  "dimensions": [
+    {
+      "dimension": "Problem Understanding",
+      "scale": {
+        "1": "Misunderstands the question or ignores key constraints.",
+        "3": "Partially addresses the question but misses some constraints.",
+        "5": "Fully understands the question and addresses all constraints."
+      }
+    },
+    {
+      "dimension": "Logical Consistency",
+      "scale": {
+        "1": "Contains major logical gaps or contradictions.",
+        "3": "Mostly consistent but has minor gaps or weak transitions.",
+        "5": "Consistent reasoning with clear, valid transitions."
+      }
+    },
+    {
+      "dimension": "Evidence & Grounding",
+      "scale": {
+        "1": "Fabricates facts or asserts unsupported claims as true.",
+        "3": "Some claims are weakly supported or unverifiable.",
+        "5": "Claims are well-supported or appropriately qualified."
+      }
+    },
+    {
+      "dimension": "Answer Correctness",
+      "scale": {
+        "1": "Final answer is incorrect or unsupported by reasoning.",
+        "3": "Final answer is plausible but partially incomplete or weakly supported.",
+        "5": "Final answer is correct and supported by reasoning."
+      }
+    }
+  ],
+  "notes": "This rubric is a generalized, non-proprietary template for evaluating reasoning quality."
+}
