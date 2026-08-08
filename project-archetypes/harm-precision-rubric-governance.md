@@ -1,4 +1,4 @@
-# Project 3 — Harm-Precision Rubric Design & Review Calibration
+# Project 3: Harm-Precision Rubric Design & Review Calibration
 
 ## Overview
 Designed and refined AI safety rubrics with an emphasis on precision,

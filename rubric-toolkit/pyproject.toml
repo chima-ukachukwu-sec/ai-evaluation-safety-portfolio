@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rubric-toolkit"
+version = "0.1.0"
+description = "Rubric validation and inter-rater agreement for AI safety evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Chima Anthony Ukachukwu" }]
+keywords = ["ai-safety", "evaluation", "rubric", "inter-rater-agreement", "red-teaming"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+rubrictk = "rubrictk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

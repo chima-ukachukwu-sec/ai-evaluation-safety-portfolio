@@ -1,39 +1,56 @@
 {
   "name": "Reasoning Quality Rubric (NDA-Safe)",
-  "version": "1.0",
+  "version": "2.0",
+  "changelog": [
+    {
+      "version": "2.0",
+      "change": "Added anchors for levels 2 and 4 on every dimension. v1.0 anchored only 1, 3 and 5 while the full 1-5 range stayed selectable. Found by running rubric-toolkit against this file."
+    },
+    { "version": "1.0", "change": "Initial four-dimension rubric." }
+  ],
+  "scale_range": [1, 5],
+  "scoring_notes": "Every level 1 to 5 is selectable and every level is anchored. Score reasoning separately from correctness: a correct answer reached by broken reasoning should score low on Logical Consistency and high on Answer Correctness, and that split is the useful signal.",
   "dimensions": [
     {
       "dimension": "Problem Understanding",
       "scale": {
-        "1": "Misunderstands the question or ignores key constraints.",
+        "1": "Misunderstands the question, or ignores constraints that change the answer.",
+        "2": "Answers a related but different question, or drops a constraint that changes the result.",
         "3": "Partially addresses the question but misses some constraints.",
-        "5": "Fully understands the question and addresses all constraints."
+        "4": "Addresses the question and its constraints, but does not surface an ambiguity worth flagging.",
+        "5": "Fully understands the question, addresses all constraints, and names any ambiguity before answering."
       }
     },
     {
       "dimension": "Logical Consistency",
       "scale": {
-        "1": "Contains major logical gaps or contradictions.",
-        "3": "Mostly consistent but has minor gaps or weak transitions.",
-        "5": "Consistent reasoning with clear, valid transitions."
+        "1": "Contains major logical gaps, or states two things that cannot both be true.",
+        "2": "One step does not follow from the previous, and the conclusion depends on that step.",
+        "3": "Mostly consistent, with minor gaps or weak transitions that do not change the conclusion.",
+        "4": "Consistent throughout, though one transition is asserted rather than shown.",
+        "5": "Consistent reasoning with clear, valid transitions that a reader can check independently."
       }
     },
     {
       "dimension": "Evidence & Grounding",
       "scale": {
-        "1": "Fabricates facts or asserts unsupported claims as true.",
-        "3": "Some claims are weakly supported or unverifiable.",
-        "5": "Claims are well-supported or appropriately qualified."
+        "1": "Fabricates facts, or asserts unsupported claims as established.",
+        "2": "Presents a real claim with invented specifics: a plausible figure, date or citation that is wrong.",
+        "3": "Some claims are weakly supported or unverifiable as stated.",
+        "4": "Claims are supported or qualified, but confidence is uniform where it should vary.",
+        "5": "Claims are supported or appropriately qualified, with confidence that tracks how well each is grounded."
       }
     },
     {
       "dimension": "Answer Correctness",
       "scale": {
-        "1": "Final answer is incorrect or unsupported by reasoning.",
+        "1": "Final answer is incorrect, or is not supported by the reasoning that precedes it.",
+        "2": "Final answer is wrong, but the method was sound and the error is traceable to one identifiable step.",
         "3": "Final answer is plausible but partially incomplete or weakly supported.",
-        "5": "Final answer is correct and supported by reasoning."
+        "4": "Final answer is correct, but the reasoning omits a case that would matter in a nearby variant.",
+        "5": "Final answer is correct and fully supported by the reasoning shown."
       }
     }
   ],
-  "notes": "This rubric is a generalized, non-proprietary template for evaluating reasoning quality."
+  "notes": "A generalized, non-proprietary template for evaluating reasoning quality."
 }

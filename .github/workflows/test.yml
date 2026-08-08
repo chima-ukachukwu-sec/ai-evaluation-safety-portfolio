@@ -1,0 +1,29 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: rubric-toolkit
+    strategy:
+      matrix:
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+      # The shipped rubrics must stay structurally clean. This is the check
+      # that failed at v1.0 and is the reason the toolkit exists.
+      - name: rubrics must validate
+        run: |
+          rubrictk check ../rubrics/safety-rubric.json
+          rubrictk check ../rubrics/reasoning-rubric.json

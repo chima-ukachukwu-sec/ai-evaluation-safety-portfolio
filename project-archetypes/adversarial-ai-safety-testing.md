@@ -1,4 +1,4 @@
-# Project 1 — Adversarial AI Safety Testing & Data Exfiltration Risk
+# Project 1: Adversarial AI Safety Testing & Data Exfiltration Risk
 
 ## Overview
 Conducted adversarial red-team evaluations to assess large language model

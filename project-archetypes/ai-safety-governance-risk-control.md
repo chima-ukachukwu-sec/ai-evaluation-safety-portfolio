@@ -1,4 +1,4 @@
-# Project 2 — AI Safety Governance, Risk Classification & Response Control
+# Project 2: AI Safety Governance, Risk Classification & Response Control
 
 ## Overview
 Contributed to AI safety governance efforts focused on classifying cybersecurity-

@@ -1,4 +1,4 @@
-# Project 4 — Authentic Long-Context Red Teaming & Persona-Based Evaluation
+# Project 4: Authentic Long-Context Red Teaming & Persona-Based Evaluation
 
 ## Overview
 Performed long-context AI safety evaluations designed to surface failures
